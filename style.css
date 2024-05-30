@@ -12,6 +12,13 @@ body{
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
+
+#explanation{
+    margin: 15px auto;
+    font-size: 12px;
+    text-align: justify;
+    font-weight:700;
+}
 @keyframes gradient {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -95,4 +102,9 @@ h2{
 
 .incorrect {
 background-color: #ff9393;
+}
+
+.bottomButtons{
+    display: flex;
+    flex-direction: row;
 }
