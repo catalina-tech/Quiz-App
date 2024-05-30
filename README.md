@@ -7,3 +7,5 @@ A simple quiz application built with HTML, CSS, and JavaScript.
 - Answer shuffling
 
 Check out the live demo of the project: [Quiz App Live Demo](https://catalina-tech.github.io/Quiz-App/)
+
+
