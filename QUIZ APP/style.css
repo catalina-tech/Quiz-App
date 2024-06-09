@@ -13,6 +13,24 @@ body{
     animation: gradient 15s ease infinite;
 }
 
+#playerOne, #playerTwo{
+    display: flex;
+    margin: 20px auto;
+    padding: 5px 5px;
+    
+}
+
+#quizStart{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:burlywood;
+    border: 1px solid burlywood;
+    color: brown;
+    font-weight: bold;
+    
+}
+
 #explanation{
     margin: 15px auto;
     font-size: 12px;
@@ -45,7 +63,7 @@ h2{
     margin-bottom: 20px;
 }
 
-.quiz{
+#quizSection, #startSection{
     padding: 20px 0;
 }
 .btn{
