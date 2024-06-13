@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>GMP QUIZ APP</title>
-</head>
-<body>
-    <div class="app">
-        <h1>GMP QUIZ</h1>
-        <div class="quiz">
-            <h2 id="question">What is GMP</h2>
-           <div id="answerButtons">
-            <button class=" btn">Answer 1</button>
-            <button class=" btn">Answer 2</button>
-            <button class=" btn">Answer 3</button>
-            <button class=" btn">Answer 4</button>
-           </div>
-            <div id="explanation"></div>
-            <div class="bottomButtons">
-           <button id="btn-next">Next</button>
-           <button id="shuffleButton">shuffle Button</button>
-           </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script_1.js"></script>
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <!--player name Input Section-->
+    <div id="app">
+      <div id="startSection" class="quizStart">
+        <h1>WELCOME TO THE GOOD MANUFACTURING PRACTICES QUIZ</h1>
+        <label for="playerName">Enter your name:
+        <input
+          type="text"
+          id="playerNameInput"
+          placeholder="Enter your name"
+          required
+        /></label>
+        <button id="startButton" class="buttonStart">Start Quiz (All Questions)</button>
+        <!-- <button id="gmpQuestions" onclick='filteredQuestionsGmp()'>GMP Questions</button>
+        <button id="personalHygieneQuestions" onclick='filteredQuestionsPersonalHygiene(questions, "Personal Hygiene")'>Personal Hygiene Questions</button> -->
+      </div>
     </div>
-</body>
+
+    <!--Quiz Questions-->
+    
+    <div id="quizSection" class="hidden">
+      <h2><span id="playerName"></span></h2>
+      <h3 id="question"></h3>
+
+      <div id="answerButtons"></div>
+      <div id="explanation"></div>
+
+      <div class="bottomButtons">
+        <button id="btn-next">Next</button>
+        <button id="shuffleButton">shuffle Answers</button>
+      </div>
+    </div>
+
+  </body>
 </html>
