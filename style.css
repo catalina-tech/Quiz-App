@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   font-family: sans-serif, Arial, Helvetica;
@@ -7,10 +7,7 @@
 
 body {
   background: rgb(249, 244, 232);
-  /* transition: background-color 0.5s;
-    background: linear-gradient(to right, #845EC2, #FF6F91, #FF9671, #F9F871); */
-  /*background-size: 500% 500%;*/
-  /* animation: gradient 15s ease infinite; */
+
   color: rgb(35, 10, 1);
 }
 
@@ -53,18 +50,13 @@ h3 {
   text-align: justify;
   font-weight: 700;
 }
-/* @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-} */
 
 #app {
   margin: 200px auto;
   background: #fff;
   border: 1px solid rgb(35, 10, 1);
   width: 90%;
-  /*max-width: 600px;*/
+ 
   border-radius: 10px;
   padding: 30px;
   
@@ -116,8 +108,8 @@ h3 {
   width: 150px;
   padding: 10px;
   cursor: pointer;
-  /*display:block; /*Makes the button visible*/
-  display: none; /*Makes the button invisible when the person is answerinf the question*/
+ 
+  display: none; 
 }
 
 .buttonStart {
@@ -197,4 +189,33 @@ h3 {
 .bottomButtons {
   display: flex;
   flex-direction: row;
+} */
+
+.hidden {
+  display: none;
+}
+.searchInput{
+margin-top:20px;
+}
+.answer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.answer input {
+  margin-right: 10px;
+}
+
+.btn {
+  display: block;
+  margin: 5px 0;
+}
+.isCorrect {
+  background-color: green;
+}
+.isFalse {
+  background-color: red;
+}
+.questionText{
+font-weight:bold;
 }
