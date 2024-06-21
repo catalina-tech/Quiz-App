@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script_1.js"></script>
-    <title>Quiz App</title>
-  </head>
-  <body>
-    <!--player name Input Section-->
-    <div id="app">
-      <div id="startSection" class="quizStart">
-        <h1>WELCOME TO THE GOOD MANUFACTURING PRACTICES QUIZ</h1>
-        <label for="playerName">Enter your name:
-        <input
-          type="text"
-          id="playerNameInput"
-          placeholder="Enter your name"
-          required
-        /></label>
-        <button id="startButton" class="buttonStart">Start Quiz (All Questions)</button>
-        <!-- <button id="gmpQuestions" onclick='filteredQuestionsGmp()'>GMP Questions</button>
-        <button id="personalHygieneQuestions" onclick='filteredQuestionsPersonalHygiene(questions, "Personal Hygiene")'>Personal Hygiene Questions</button> -->
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script2.js"></script>
+  <title>Quiz App</title>
+ 
+</head>
+<body>
+  <div id="app">
+    <input id="playerNameInput" type="text" placeholder="Enter your name">
+    <button id="startButton">Start Quiz</button>
+    <button id="alphabeticButton">Orden alfabético</button>
+    <button id="randomButton">Orden aleatorio</button>
+    <button id="originalButton">Orden original</button>
+    <div class="searchInput">
+    <input type="text" id="searchInput" placeholder="seach by topic">
+    <button id="searchButton">Search</button>
     </div>
-
-    <!--Quiz Questions-->
     
-    <div id="quizSection" class="hidden">
-      <h2><span id="playerName"></span></h2>
-      <h3 id="question"></h3>
+  </div>
 
-      <div id="answerButtons"></div>
-      <div id="explanation"></div>
+  <div id="quizSection">
+    <h1 id="playerName"></h1>
+    <div id="questionsContainer"></div>
+    <button id="submitQuiz" class="hidden">Submit Quiz</button>
+  </div>
 
-      <div class="bottomButtons">
-        <button id="btn-next">Next</button>
-        <button id="shuffleButton">shuffle Answers</button>
-      </div>
-    </div>
-
-  </body>
+  <script src="quiz.js"></script>
+</body>
 </html>
