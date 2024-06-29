@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_quizForm.css" />
+    <script src="script_quizForm.js"></script>
+    <script src="https://kit.fontawesome.com/c9318579c4.js" crossorigin="anonymous"></script>
+    <title>Quiz App</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" target="_blank">
+        <button id="home">
+          <i class="fa-solid fa-house fa-xl" style="color: #4c2d10;"></i>
+        </button>
+      </a>
+      </header>
+
+    <main>
+      <h1>QUIZ FORM</h1>
+      <form id="quizInformation">
+
+        <fieldset class="questionTitle">
+          <legend>Question</legend>
+          <label for="question">Insert your question:</label>
+          <input
+            type="text"
+            id="question"
+            minlength="1"
+            maxlength="140"
+            placeholder="e.g. What is the capital of Denmark?"
+            required
+            autocomplete="on"
+          />
+        </fieldset>
+
+        <fieldset class="answersTitle">
+
+          <legend>Answers</legend>
+
+          <label for="answers"
+            >Insert your 4 answers and select the correct one:</label>
+
+          <div class="inputRow">
+            <input
+              type="text"
+              class="answers one"
+              id="one"
+              minlength="1"
+              maxlength="140"
+              placeholder="e.g. Berlin"
+              required
+              autocomplete="on"
+            />
+            <input type="radio" id="answerOneRadio" name="correct" />
+          </div>
+
+          <div class="inputRow">
+            <input
+              type="text"
+              class="answers two"
+              id="two"
+              minlength="1"
+              maxlength="140"
+              placeholder="e.g. Copenhagen"
+              required
+              autocomplete="on"
+            />
+            <input type="radio" id="answerTwoRadio" name="correct" />
+          </div>
+
+          <div class="inputRow">
+            <input
+              type="text"
+              class="answers three"
+              id="three"
+              minlength="1"
+              maxlength="140"
+              placeholder="e.g. Rome"
+              required
+              autocomplete="on"
+            />
+            <input type="radio" id="answerThreeRadio" name="correct"  />
+          </div>
+          <div class="inputRow">
+            <input
+              type="text"
+              class="answers four"
+              id="four"
+              minlength="1"
+              maxlength="140"
+              placeholder="e.g. Bogotá"
+              required
+              autocomplete="on"
+            />
+            <input type="radio" id="answerFourRadio" name="correct"/>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Explanation</legend>
+          <label for="explanation">Insert your explanation:</label>
+          <input
+            type="text"
+            id="explanation"
+            minlength="1"
+            maxlength="140"
+            required
+            autocomplete="on"
+          />
+        </fieldset>
+      </form>
+
+      <div class="buttonContainer">
+        <button id="addButton">Add Question</button>
+        
+
+      <button id="submitQuiz" class="hidden">Submit Quiz</button>
+      </div>
+
+      <div id="questionContainer"></div>
+
+      
+    </main>
+  </body>
+</html>
