@@ -1,0 +1,99 @@
+body {
+  background: rgb(249, 244, 232);
+  background-size: 500% 500%;
+  color: rgb(35, 10, 1);
+}
+
+.hidden {
+  display: none;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.answer input {
+  margin-right: 10px;
+}
+
+.btn {
+  display: block;
+  margin: 5px 0;
+}
+.isCorrect {
+  background-color: green;
+}
+.isFalse {
+  background-color: red;
+}
+.questionText {
+  font-weight: bold;
+}
+
+#questionsContainer {
+  margin: 20px 50px;
+}
+
+#quizSection {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#submitQuiz {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: rgb(35, 10, 1);
+  border: 1px solid rgb(35, 10, 1);
+  background: rgb(249, 244, 232);
+  text-align: left;
+  margin: 10px auto;
+  cursor: pointer;
+  margin: 0px 50px;
+}
+
+#submitQuiz:hover {
+  background: rgb(35, 10, 1);
+  color: #fff;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(35, 10, 1);
+  border: 1px solid rgb(35, 10, 1);
+  background: rgb(249, 244, 232);
+  text-align: left;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(35, 10, 1);
+  color: #fff;
+}
+
+#playerName {
+  margin: 20px 50px;
+}
+
+#app {
+  margin: 10px auto;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  margin: 50px 50px 0px 50px;
+}
+
+header button {
+  padding: 20px;
+}
+
+header button:hover {
+  background-color: burlywood;
+}
