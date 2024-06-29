@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_GMPQUIZ.css" />
+    <script src="script_GMPQUIZ.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c9318579c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <header>
+      <a href="index_mainPage.html" target="_blank">
+        <button id="home">
+          <i class="fa-solid fa-house fa-xl" style="color: #4c2d10"></i>
+        </button>
+      </a>
+    </header>
+
+    <div id="app">
+      <h1>Good Manufacturing Practices QUIZ APP</h1>
+      <input id="playerNameInput" type="text" placeholder="Enter your name" />
+      <button id="startButton">Start Quiz</button>
+      <button id="alphabeticButton">Alphabetical order</button>
+      <button id="randomButton">Random order</button>
+      <button id="originalButton">Original order</button>
+      <div class="searchInput">
+        <input type="text" id="searchInput" placeholder="GMP" />
+        <button id="searchButton">Search</button>
+      </div>
+    </div>
+
+    <div id="quizSection">
+      <h1 id="playerName"></h1>
+      <div id="questionsContainer"></div>
+      <button id="submitQuiz" class="hidden">Submit Quiz</button>
+    </div>
+  </body>
+</html>
