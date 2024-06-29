@@ -1,0 +1,139 @@
+body {
+  background: rgb(249, 244, 232);
+  background-size: 500% 500%;
+  color: rgb(35, 10, 1);
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+input {
+  margin-top: 10px;
+}
+
+.question {
+  padding-top: 10px;
+}
+
+.inputRow {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border-radius: 20px;
+  margin: 0px 50px;
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.questionTitle,
+.answersTitle {
+  margin-bottom: 20px;
+}
+
+.questionContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainer button {
+  margin: 15px 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: rgb(35, 10, 1);
+  border: 1px solid rgb(35, 10, 1);
+  background: rgb(249, 244, 232);
+  text-align: left;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(35, 10, 1);
+  color: #fff;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.question-block {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.question-block h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.question-block form {
+  margin-bottom: 10px;
+}
+
+.question-block label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.question-block input[type="radio"] {
+  margin-right: 10px;
+}
+
+.score {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.explanation {
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.explanation.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+.isCorrect:hover {
+  color: green;
+}
+.isFalse:hover {
+  color: red;
+}
+
+header {
+  margin: 50px 50px 0px 50px;
+}
+
+header button {
+  padding: 20px;
+}
+
+header button:hover {
+  background-color: burlywood;
+}
